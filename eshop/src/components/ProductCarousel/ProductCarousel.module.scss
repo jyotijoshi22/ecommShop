@@ -1,0 +1,24 @@
+.ProductCarousel {
+  position: relative;
+
+  &__Text {
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  &__Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(black, 0) 60%, rgba(black, 0.8));
+    z-index: 1;
+  }
+
+  &__img {
+    height: 400px;
+    object-fit: cover;
+    z-index: 0;
+  }
+}

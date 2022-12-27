@@ -1,0 +1,24 @@
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  margin: 0px;
+  background: linear-gradient(to right, pink, white);
+  &__left {
+    // width: 80px;
+    //height: 80px;
+  }
+
+  &__right {
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    &__signUp {
+      margin: 4px;
+    }
+    &__login {
+      margin: 4px;
+    }
+  }
+}
