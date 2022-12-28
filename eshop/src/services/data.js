@@ -5,9 +5,14 @@ export const getStoreItems = async () => {
   //Specify which collection
   const collectionRef = collection(db, "react-shop-tshirt");
 
-  const proData = await getDocs(collectionRef);
+  const querySnapshot = await getDocs(collectionRef);
 
-  proData.forEach((doc) => {
-    console.log(doc.id, " => ", doc.data());
+  const data = querySnapshot.docs.map((doc) => {
+    const id = doc.id;
+    const restOfData = doc.data();
+
+    return { id, ...restOfData };
   });
+
+  return data;
 };
