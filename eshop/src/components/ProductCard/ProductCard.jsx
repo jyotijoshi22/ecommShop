@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as filledHeart } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as unfilledHeart } from "@fortawesome/free-regular-svg-icons";
 import { favProduct } from "../../services/server";
-import { getStoreItems } from "../../services/server";
+import { getStoreItems } from "../../services/data";
 import { Card } from "react-bootstrap";
 
 const ProductCard = ({ product }) => {

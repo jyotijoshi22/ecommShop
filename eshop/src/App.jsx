@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./App.module.scss";
 //import Cart from "./containers/Cart"
-import { getStoreItems } from "./services/server";
+import { getStoreItems } from "./services/data";
 import { Outlet } from "react-router-dom";
 
 function App() {
