@@ -7,6 +7,7 @@ import { favProduct } from "../../services/server";
 import { useEffect, useState } from "react";
 import { getStoreItems } from "../../services/server";
 import { Card } from "react-bootstrap";
+//import { ProductPage } from "../../containers/ProductPage";
 
 const ProductCard = ({ product }) => {
   //const [products, setProducts, cart, setCart] = useOutletContext();
