@@ -4,13 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as filledHeart } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as unfilledHeart } from "@fortawesome/free-regular-svg-icons";
 import { favProduct } from "../../services/server";
-import { useEffect, useState } from "react";
-import { getStoreItems } from "../../services/data";
+import { getStoreItems } from "../../services/server";
 import { Card } from "react-bootstrap";
 
 const ProductCard = ({ product }) => {
-	//const [products, setProducts, cart, setCart] = useOutletContext();
-	const [products, setProducts] = useState([]);
+  //const [products, setProducts, cart, setCart] = useOutletContext();
+  const [ products, setProducts ] = useOutletContext();
 
 	// Change favourite status in DB and fetch products after change
 	const handleFav = async () => {
