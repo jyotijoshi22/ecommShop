@@ -1,0 +1,31 @@
+.ProductPage {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 20px;
+
+  flex-grow: 1;
+
+  &__Img {
+    min-width: 350px;
+    width: 50%;
+    max-height: 85vh;
+    object-fit: cover;
+  }
+
+  &__Info {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    gap: 10px;
+
+    min-width: 350px;
+    width: 40%;
+    margin: 20px;
+  }
+}
+
+.Heart {
+  color: red;
+  cursor: pointer;
+}

@@ -1,5 +1,5 @@
 import styles from "./ProductGrid.module.scss";
-import { getStoreItems } from "../../services/data";
+import { getStoreItems } from "../../services/server";
 import { useEffect, useState } from "react";
 import ProductCard from "../../components/ProductCard";
 

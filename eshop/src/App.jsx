@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Home from "./containers/Home";
 import ProductGrid from "./containers/ProductGrid";
-//import ProductPage from "./containers/ProductPage"
+import ProductPage from "./containers/ProductPage";
 //import Cart from "./containers/Cart"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -13,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="products" element={<ProductGrid />} />
+          <Route path="products/:productId" element={<ProductPage />} />
         </Routes>
       </BrowserRouter>
     </div>
