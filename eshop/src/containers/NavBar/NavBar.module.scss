@@ -2,22 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 10px;
   margin: 0px;
-  background: linear-gradient(to right, pink, white);
-  &__left {
-    // width: 80px;
-    //height: 80px;
-  }
+  margin-top: 0px;
 
   &__right {
     font-size: 1rem;
     font-weight: 600;
     position: relative;
-    &__signUp {
+    &__home {
       margin: 4px;
     }
-    &__login {
+    &__cart {
       margin: 4px;
     }
   }

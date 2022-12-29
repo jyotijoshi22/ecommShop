@@ -1,7 +1,7 @@
 import styles from "./ProductGrid.module.scss";
 import { getStoreItems } from "../../services/data";
 import { useEffect, useState } from "react";
-import ProductList from "../ProductList";
+import ProductCard from "../../components/ProductCard";
 
 const ProductGrid = () => {
   const [products, setProducts] = useState([]);
@@ -13,12 +13,16 @@ const ProductGrid = () => {
     };
     wrapper();
   }, []);
+
   return (
     <div className={styles.ProductGrid}>
-      <ProductList products={products} />
-      {/* {products.map((pro) => {
-        return <h3 key={pro.id}> {pro.price}</h3>;
-      })} */}
+      <h3> List of Products</h3>
+      {/* Product Cards in a grid */}
+      <div className={styles.ProductGrid__Grid}>
+        {products.map((pro) => {
+          return <ProductCard key={pro.id} product={pro} />;
+        })}
+      </div>
     </div>
   );
 };

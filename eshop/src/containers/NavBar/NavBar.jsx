@@ -5,16 +5,15 @@ const NavBar = () => {
   return (
     <div className={styles.NavBar}>
       <div className={styles.NavBar__left}>
-        {/* add  same image */}
-        NAME ECOMMERCE SHOP& ADD LOGO{" "}
+        <img src="./src/assets/logo.jpg" height="50px" width="200px" />
       </div>
 
       <div className={styles.NavBar__right}>
-        <NavLink to="/signUp" className={styles.NavBar__right__signUp}>
-          SIGN UP
+        <NavLink to="/" className={styles.NavBar__right__home}>
+          HOME
         </NavLink>
-        <NavLink to="/signUp" className={styles.NavBar__right__login}>
-          LOGIN
+        <NavLink to="/Cart" className={styles.NavBar__right__cart}>
+          CART <img src="./src/assets/Cart.png" height="40px" />
         </NavLink>
       </div>
     </div>

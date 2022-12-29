@@ -36,8 +36,10 @@ const ProductCarousel = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="./src/assets/carousel1.jfif"
+            src="./src/assets/carousel1.jpeg"
             alt="First slide"
+            // width="500"
+            height="300"
           />
           <Carousel.Caption>
             <h3>First slide label</h3>
@@ -48,8 +50,9 @@ const ProductCarousel = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="./src/assets/carousel2.jfif"
+            src="./src/assets/carousel2.jpeg"
             alt="Second slide"
+            height="300"
           />
 
           <Carousel.Caption>
@@ -61,8 +64,9 @@ const ProductCarousel = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="./src/assets/carousel2.jfif"
+            src="./src/assets/carousel3.jpeg"
             alt="Third slide"
+            height="300"
           />
 
           <Carousel.Caption>
