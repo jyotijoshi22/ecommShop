@@ -11,7 +11,6 @@ const ProductGrid = () => {
       {/* Product Cards in a grid */}
       <div className={styles.ProductGrid_Grid}>
         {products.map((pro) => {
-        //return <h3 key={pro.id}> {pro.price}</h3>;
           return <ProductCard key={pro.id} product={pro} />;
       })}
       </div>

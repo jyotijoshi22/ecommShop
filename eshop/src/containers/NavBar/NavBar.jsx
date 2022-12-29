@@ -13,8 +13,11 @@ const NavBar = () => {
         <NavLink to="/signUp" className={styles.NavBar__right__signUp}>
           SIGN UP
         </NavLink>
-        <NavLink to="/signUp" className={styles.NavBar__right__login}>
-          LOGIN
+        <NavLink to="/Products" className={styles.NavBar__right__product}>
+          PRODUCTS 
+        </NavLink>
+        <NavLink to="/Cart" className={styles.NavBar__right__cart}>
+          CART <img src="./src/assets/Cart.png" height="40px" />
         </NavLink>
       </div>
     </div>
