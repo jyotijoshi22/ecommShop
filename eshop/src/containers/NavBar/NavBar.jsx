@@ -12,6 +12,9 @@ const NavBar = () => {
         <NavLink to="/" className={styles.NavBar__right__home}>
           HOME
         </NavLink>
+        <NavLink to="/Products" className={styles.NavBar__right__product}>
+          PRODUCTS
+        </NavLink>
         <NavLink to="/Cart" className={styles.NavBar__right__cart}>
           CART <img src="./src/assets/Cart.png" height="40px" />
         </NavLink>
