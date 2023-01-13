@@ -1,0 +1,23 @@
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 0px;
+  margin-top: 0px;
+
+  &__right {
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    &__home {
+      margin: 8px;
+    }
+    &__products {
+      margin: 8px;
+    }
+    &__cart {
+      margin: 8px;
+    }
+  }
+}

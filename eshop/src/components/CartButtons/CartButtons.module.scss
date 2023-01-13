@@ -1,0 +1,16 @@
+.CartButtons {
+	display: grid;
+	grid-template-columns: repeat(5, 40px);
+	margin: 2px 0px;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+
+	&__Qty {
+		text-align: center;
+	}
+
+	&__Heading {
+		margin: 0px;
+	}
+}
